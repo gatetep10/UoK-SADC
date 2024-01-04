@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'UoK - SADC',
+    'title' => 'UoK | SADC',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => 'UoK - <b>SADC</b>',
+    'logo' => 'UoK | <b>SADC</b>',
     'logo_img' => 'vendor/adminlte/dist/img/UoKLogo.jpeg',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -110,7 +110,7 @@ return [
         'enabled' => true,
         'img' => [
             'path' => 'vendor/adminlte/dist/img/UoKLogo.jpeg',
-            'alt' => 'AdminLTE Preloader Image',
+            'alt' => 'UoK-SADC Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
             'height' => 60,
@@ -253,7 +253,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'dashboard',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -304,7 +304,7 @@ return [
         // Sidebar items:
         [
             'text' => 'Dashboard',
-            'url' => 'home',
+            'route' => 'dashboard',
             'icon' => 'fas fa-fw fa-home'
         ],
 /*         [
@@ -326,7 +326,7 @@ return [
                 ],
                 [
                     'text' => 'Permissions',
-                    'url' => 'permissions',
+                    'url' => 'users/permissions',
                 ],
             ]
         ],

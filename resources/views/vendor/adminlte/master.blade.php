@@ -15,7 +15,7 @@
     {{-- Title --}}
     <title>
         @yield('title_prefix', config('adminlte.title_prefix', ''))
-        @yield('title', config('adminlte.title', 'AdminLTE 3'))
+        @yield('title', config('adminlte.title', 'UoK - SADC'))
         @yield('title_postfix', config('adminlte.title_postfix', ''))
     </title>
 
@@ -76,10 +76,9 @@
 </head>
 
 <body class="@yield('classes_body')" @yield('body_data')>
-
+@include('sweetalert::alert')
     {{-- Body Content --}}
     @yield('body')
-    @yield('footer')
 
     {{-- Base Scripts --}}
     @if(!config('adminlte.enabled_laravel_mix'))
@@ -108,5 +107,4 @@
     @yield('adminlte_js')
 
 </body>
-
 </html>
