@@ -10,10 +10,8 @@
     <p>Welcome to this beautiful admin panel.</p>
 @stop
 @section('footer')
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">jjj</footer>
 @stop
-
-
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop

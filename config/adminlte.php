@@ -152,7 +152,7 @@ return [
     'layout_boxed' => null,
     'layout_fixed_sidebar' => true,
     'layout_fixed_navbar' => true,
-    'layout_fixed_footer' => true,
+    'layout_fixed_footer' => false,
     'layout_dark_mode' => false,
 
     /*
@@ -322,11 +322,13 @@ return [
                 ],
                 [
                     'text' => 'Roles',
-                    'url' => 'roles',
+                    'route' => 'users.roles.index',
+                    'active' => ['users/roles/*'],
                 ],
                 [
                     'text' => 'Permissions',
-                    'url' => 'users/permissions',
+                    'route' => 'users.permissions.index',
+                    'active' => ['users/permissions/*'],
                 ],
             ]
         ],

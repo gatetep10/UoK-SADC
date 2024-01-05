@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title')
+@section('title', 'Dashboard')
 
 @section('content_header')
     <h1>Dashboard</h1>
@@ -12,7 +12,6 @@
 @section('footer')
     <footer class="main-footer"></footer>
 @stop
-
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
